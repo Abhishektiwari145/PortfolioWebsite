@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Abhishek Tiwari & Abhinaw Singh</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#" class="nav-link" onclick="showSection('home')">Home</a></li>
+                <li><a href="#" class="nav-link" onclick="showSection('about')">About</a></li>
+                <li><a href="#" class="nav-link" onclick="showSection('projects')">Projects</a></li>
+                <li><a href="#" class="nav-link" onclick="showSection('skills')">Skills</a></li>
+                <li><a href="#" class="nav-link" onclick="showSection('contact')">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Home Section -->
+        <section id="home" class="page-section hero-section">
+            <div class="hero-content">
+                <h1>Welcome to Our Portfolio</h1>
+                <p>We are <strong>Abhishek Tiwari</strong> and <strong>Abhinaw Singh</strong>, passionate about coding and creating impactful solutions.</p>
+                <a href="#" class="cta-button" onclick="showSection('about')">Explore Our Work</a>
+            </div>
+        </section>
+
+        <section id="about" class="page-section about-section">
+            <div class="about-container">
+                <!-- Text Section -->
+                <div class="about-text">
+                    <h2>About Us</h2>
+                    <p>We are two passionate developers, <strong>Abhishek Tiwari</strong> and <strong>Abhinaw Singh</strong>, united by our love for technology and innovation. Together, we specialize in full-stack development, UI/UX design, and building impactful software solutions.</p>
+                    <p>Our technical toolkit includes powerful front-end technologies such as <strong>HTML5</strong>, <strong>CSS3</strong>, <strong>JavaScript (ES6+)</strong>, and <strong>ReactJS</strong>. On the backend, we excel with <strong>Node.js</strong>, <strong>Express</strong>, and databases like <strong>MongoDB</strong> and <strong>MySQL</strong>, allowing us to build scalable, high-performance applications.</p>
+                    <p>We are passionate about crafting responsive and seamless user experiences, ensuring that performance and functionality are always at the forefront of our projects. We believe in <strong>continuous learning</strong> and staying ahead of the curve by exploring new frameworks, libraries, and emerging technologies.</p>
+                    <p>As a team, we collaborate closely to deliver high-quality solutions that not only meet our clients' needs but also elevate their brand and user experience. Our goal is to make technology work for you!</p>
+                </div>
+        
+                <!-- Image Section -->
+                <div class="about-image">
+                    <img src="https://images.unsplash.com/photo-1507238691740-187a5b1d37b8?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8cG9ydGZvbGlvfGVufDB8fDB8fHww" alt="Abhishek Tiwari & Abhinaw Singh" class="about-img">
+                </div>
+            </div>
+        </section>
+        
+        
+
+        <!-- Projects Section -->
+        <section id="projects" class="page-section projects-section">
+            <h2>Projects</h2>
+            <div class="project-grid">
+                <div class="project-card">
+                    <h3>Portfolio Website</h3>
+                    <p>A dynamic and interactive portfolio showcasing our skills and achievements.</p>
+                    <button onclick="openModal('Portfolio Website', 'This is the portfolio you are currently viewing. Built with HTML, CSS, and JavaScript.')">View Details</button>
+                </div>
+                <div class="project-card">
+                    <h3>Weather App</h3>
+                    <p>A real-time weather application providing updates for any location.</p>
+                    <button onclick="openModal('Weather App', 'This app uses APIs to fetch live weather data and presents it with a clean UI.')">View Details</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="page-section skills-section">
+            <h2>Skills</h2>
+            <div class="skills-grid">
+                <div class="skill-item">
+                    <img src="https://cdn-icons-png.flaticon.com/128/5815/5815809.png" alt="SQL">
+                    <p>My SQL</p>
+                </div>
+                <div class="skill-item">
+                    <img src="https://img.icons8.com/?size=100&id=23027&format=png" alt="">
+                    <p>HTML</p>
+                </div>
+                <div class="skill-item">
+                    <img src="https://img.icons8.com/?size=96&id=11935&format=png" alt="">
+                    <p>CSS</p>
+                </div>
+                <div class="skill-item">
+                    <img src="https://img.icons8.com/?size=128&id=gYCTehfTlYk5&format=png" alt="JavaScript">
+                    <p>JavaScript</p>
+                </div>
+                <div class="skill-item">
+                    <img src="https://img.icons8.com/?size=160&id=NfbyHexzVEDk&format=png" alt="React">
+                    <p>React</p>
+                </div>
+                <div class="skill-item">
+                    <img src="https://img.icons8.com/?size=160&id=hGdCwhSHUe6L&format=png" alt="Python">
+                    <p>Python</p>
+                </div>
+                <div class="skill-item">
+                    <img src="https://img.icons8.com/?size=96&id=hsPbhkOH4FMe&format=png" alt="Node.js">
+                    <p>Node.js</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="page-section contact-section">
+            <h2>Contact Us</h2>
+            <p>We'd love to hear from you! Fill out the form below or reach us via email or social media.</p>
+            <form id="contact-form">
+                <div class="input-group">
+                    <label for="name"><img src="https://img.icons8.com/?size=48&id=82770&format=png" alt="Name"> Name:</label>
+                    <input type="text" id="name" name="name" placeholder="Your Name" required>
+                </div>
+                <div class="input-group">
+                    <label for="email"><img src="https://img.icons8.com/?size=64&id=22028&format=png" alt="Email"> Email:</label>
+                    <input type="email" id="email" name="email" placeholder="Your Email" required>
+                </div>
+                <div class="input-group">
+                    <label for="message"><img src="https://img.icons8.com/?size=100&id=382f4IJWLbtB&format=gif" alt="Message"> Message:</label>
+                    <textarea id="message" name="message" placeholder="Your Message" required></textarea>
+                </div>
+                <button type="submit" class="cta-button">Send Message</button>
+            </form>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Abhishek Tiwari & Abhinaw Singh. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
